@@ -15,7 +15,6 @@
 #!/usr/bin/python
 import mechanize
 import cookielib
-from time import sleep
 
 br=mechanize.Browser()
 
@@ -38,9 +37,13 @@ class sms_client:
         br.form['password']=pword
         br.submit()
         s = br.geturl()
+        #Check for Valid password here
+        if s.find('Login') != -1:
+            return False #returns false on password error
         link = s.split("?")
         self.id = link[1]
-        
+        return True
+     
     def open_sendpage(self):
         action="SendSMS"
         s = self.get_weburl(action)
@@ -76,5 +79,3 @@ if __name__=="__main__":
     #client.authenticate_site('7200120343','xxx')
     #client.send_sms('9487847594',"Hello World)
     #client.logout()
-
-
