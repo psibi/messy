@@ -77,5 +77,5 @@ if __name__=="__main__":
     pass
     #client = sms_client()
     #client.authenticate_site('7200120343','xxx')
-    #client.send_sms('9487847594',"Hello World)
+    #client.send_sms('948xxx94',"Hello World)
     #client.logout()
