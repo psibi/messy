@@ -65,8 +65,7 @@ class sms_client:
         s = self.get_weburl(action)
         br.form.action = s
         br.submit()
-        print br.response().read()
-  
+   
     def get_weburl(self,action):
         weburl = "http://www.160by2.com/" + action + ".action?" + self.id
         return weburl
