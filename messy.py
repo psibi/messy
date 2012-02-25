@@ -33,16 +33,15 @@ class messy:
             user=self.username.get_text()
             pword=self.password.get_text()
             self.sms.authenticate_site(user,pword)
-        else:
-            self.counter = self.counter + 1
-            mobno = self.mobno.get_text()
-            startiter, enditer = self.msgtext.get_bounds()
-            text=self.msgtext.get_text(startiter,enditer,False)
-            self.sms.send_sms(mobno,text)
-            self.sms.logout()
-            dlg=gtk.MessageDialog(self.window,gtk.DIALOG_DESTROY_WITH_PARENT,gtk.MESSAGE_INFO,gtk.BUTTONS_OK,"Message Sent!")
-            dlg.run()
-            dlg.destroy()
+        self.counter = self.counter + 1
+        mobno = self.mobno.get_text()
+        startiter, enditer = self.msgtext.get_bounds()
+        text=self.msgtext.get_text(startiter,enditer,False)
+        self.sms.send_sms(mobno,text)
+        self.sms.logout()
+        dlg=gtk.MessageDialog(self.window,gtk.DIALOG_DESTROY_WITH_PARENT,gtk.MESSAGE_INFO,gtk.BUTTONS_OK,"Message Sent!")
+        dlg.run()
+        dlg.destroy()
 
     def on_send_window_destroy(self,widget,data=None):
         gtk.main_quit()
