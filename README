@@ -10,7 +10,5 @@ Just clone this repository and make sure you have python and gtk installed in yo
 Go into the cloned directory and issue the following command:
 python messy.py
 
-To do:
-#1 Validation Logic is not added for anything.
-#2 Probably add a address book it for storing contacts.
+
  
