@@ -1,17 +1,21 @@
-#Author Sibi <sibi@psibi.in>
-#This program is free software: you can redistribute it and/or modify
-#under the terms of the GNU General Public License as published by
-#Free Software Foundation, either version 3 of the License, or
-#your option) any later version.
+# Copyright (C) 2012 Sibi <sibi@psibi.in>
 #
-#This  program is distributed in the hope that it will be useful,
-#WITHOUT ANY WARRANTY; without even the implied warranty of
-#or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#General Public License for more details.
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
 #
-#should have received a copy of the GNU General Public License
-#with this program.  If not, see <http://www.gnu.org/licenses/>.
-
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+#
+# Created:  Feb 25, 2012
+# Author:   Sibi <sibi@psibi.in>
 #!/usr/bin/python
 import mechanize
 import cookielib
