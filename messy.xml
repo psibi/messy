@@ -226,7 +226,7 @@
             <child>
               <object class="GtkEntry" id="char_entry">
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
+                <property name="can_focus">False</property>
                 <property name="editable">False</property>
                 <property name="invisible_char">&#x2022;</property>
                 <property name="text" translatable="yes">140</property>
