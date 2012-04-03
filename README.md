@@ -12,6 +12,7 @@ Installation:
 Just clone this repository and make sure you have python and gtk installed in your system.
 
 Go into the cloned directory and issue the following command:
+
    $ python messy.py
 
 NOTE : 	Make sure you install mechanize python package in your system.
