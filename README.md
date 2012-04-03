@@ -3,8 +3,8 @@ Messy - Client for 160by2.com in Python
 
 It is developed using mechanize - API for accessing WWW cleanly.
 
-Prequisite: 
------------
+Prerequisites: 
+--------------
 You should already have an account registered with 160by2.com. (If you don't have one, it's free - go and get one.)
 
 Installation:
