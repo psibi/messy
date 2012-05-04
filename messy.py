@@ -65,12 +65,6 @@ class messy:
         startiter, enditer = self.msgtext.get_bounds()
         text = self.msgtext.get_text(startiter,enditer,False)
         remaining_length = total_length - len(text)
-        if len(text)>=self.counts:
-            self.counts = self.counts * 2
-            initial=text.rsplit(' ',1)[0]
-            final=text.rsplit(' ',1)[1]
-            text = initial + '\n' + final
-            self.msgtext.set_text(text)
         if remaining_length >= 0:
             self.char_entry.set_text(str(remaining_length))
         else:
