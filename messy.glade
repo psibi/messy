@@ -254,6 +254,7 @@
             <property name="height_request">187</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
+            <property name="wrap_mode">word</property>
             <property name="buffer">msg</property>
           </object>
           <packing>
